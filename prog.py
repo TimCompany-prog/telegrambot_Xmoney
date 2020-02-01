@@ -1,7 +1,7 @@
 import telebot
 import requests
-from time import time#message_chat_id = t.me/novinikkas8B
-bot = telebot.TeleBot('1027784495:AAFoTJzFPw8w4lucoAD-FzrHgeaOg3pURMI')
+from time import time
+bot = telebot.TeleBot('Token')
 
 from telebot import types
 a = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -28,7 +28,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
 
-     bot.send_message(-1001199377093,message.text)
+    
 
 
 
@@ -39,9 +39,7 @@ def send_text(message):
         bot.send_message(message.chat.id,"Способы заработать🏧",reply_markup=af)
 
         
-        #bot.restrict_chat_member(-1001461255585,, until_date=time()+120)
-        #bot.send_message(-1001485207430, "привіт всім")
-        #bot.send_message(-1001461255585, "привіт сімʼя")
+   
      if message.text.lower() == 'разработчик👨‍💻':
         bot.send_message(message.chat.id, 'Мой разработчик @timproger')
      if message.text.lower() == 'чат📝':
